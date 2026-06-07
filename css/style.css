@@ -1,0 +1,309 @@
+/* LOADER */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 900;
+}
+.logo-container {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease;
+}
+
+.btn-custom{
+  border: 1px solid #deb425 !important;
+}
+.logo-container img {
+  width: 180px;
+  max-width: 60vw;
+}
+
+.logo-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ROTATION */
+.rotate-animation {
+  animation: rotateFlower 2s linear forwards;
+}
+
+@keyframes rotateFlower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body.loading {
+  overflow: hidden;
+}
+
+h1{
+  font-size: 80px !important;
+  font-weight: 900 !important;
+}
+p{
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+/* MENU HIDE/SHOW */
+.restaurant-menu {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.restaurant-menu.visible {
+  opacity: 1;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.menu-link {
+  cursor: pointer;
+}
+
+.active-menu {
+   color: #deb425 !important;
+}
+
+/*menu*/
+
+
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-top: 15px;
+}
+
+.item-name {
+  font-weight: 600;
+}
+
+.item-price {
+  color: #b87333;
+  font-weight: 600;
+}
+
+.item-desc {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 10px 30px;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  z-index: 10;
+  transition: opacity 0.8s ease;
+}
+
+.logo-container img {
+  width: 40vw;
+  max-width: 400px;
+}
+
+.logo-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rotate-animation {
+  animation: rotateFlower 2s linear forwards;
+}
+
+@keyframes rotateFlower {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body.loading {
+  overflow: hidden;
+}
+
+.restaurant-menu.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.legend-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  font-size: 0.95rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  flex-direction: column;
+  /* z-index: 1000; */
+  width: 100%;
+}
+
+.allergens {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.1rem 0.35rem;
+  line-height: 1;
+}
+
+/* Color codes to match legend */
+.badge.vegetarian {
+  background-color: #4caf50;
+  /* green */
+}
+
+.badge.nuts {
+  background-color: #b5651d;
+  /* brown */
+}
+
+.badge.gluten {
+  background-color: #e67e22;
+  /* orange */
+}
+
+.badge.dairy {
+  background-color: #3498db;
+  /* blue */
+}
+
+.legend-item {
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.legend-item.vegetarian {
+  background-color: #4caf50;
+  /* green */
+}
+
+.legend-item.nuts {
+  background-color: #b5651d;
+  /* brown */
+}
+
+.legend-item.gluten {
+  background-color: #e67e22;
+  /* orange */
+}
+
+.legend-item.dairy {
+  background-color: #3498db;
+  /* blue */
+}
+
+body {
+  padding-bottom: 60px;
+  /* space so footer doesn't cover content */
+}
+
+/* home */
+
+
+.hero {
+  height: 80vh;
+  background: url("../assets/hero.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+  color: white;
+  font-size: 80px !important;
+  font-weight: 900;
+  line-height: normal;
+  overflow: hidden;
+}
+
+/* DARK OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero .overlay {
+  position: relative;
+  z-index: 2;
+}
