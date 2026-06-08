@@ -1,542 +1,530 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lotus Restaurant</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lotus Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
 
-    <body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!-- MENU WRAPPER -->
-     <div class="container-fluid p-0">
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-dark bg-black py-3 sticky-top">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between w-100">
-            <a class="nav-link menu-link" data-section="home" href="index.html">
-              <img src="assets/lotus-all.svg" style="height: 70px" />
-            </a>
-            <div class="d-flex gap-4">
-               <a class="nav-link menu-link" data-section="home" href="index.html"
-                >Home</a
-              >
-              <a class="nav-link menu-link active-menu" data-section="food" href="food.html"
-                >Food</a
-              >
-              <a
-                class="nav-link menu-link"
-                data-section="drinks"
-                href="drinks.html"
-                >Drinks</a
-              >
-              <a
-                class="nav-link menu-link"
-                data-section="shisha"
-                href="shisha.html"
-                >Shisha</a
-              >
+<body>
+
+  <!-- MENU WRAPPER -->
+  <div class="container-fluid p-0">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-black py-3 sticky-top">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <a class="nav-link menu-link" data-section="home" href="index.html">
+            <img src="assets/lotus-all.svg" style="height: 70px" />
+          </a>
+          <div class="d-flex gap-4">
+            <a class="nav-link menu-link" data-section="home" href="index.html">Home</a>
+            <a class="nav-link menu-link active-menu" data-section="food" href="food.html">Food</a>
+            <a class="nav-link menu-link" data-section="drinks" href="drinks.html">Drinks</a>
+            <a class="nav-link menu-link" data-section="shisha" href="shisha.html">Shisha</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid py-5">
+      <div class="container">
+        <!-- Cold Appetizers Section -->
+        <div class="py-5">
+          <h2 style="text-align: center">Cold Appetizers</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">HUMUS
+                  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                  </span>
+                </span>
+                <span class="item-price">£5.70</span>
+              </div>
+              <div class="item-desc">
+                Crushed chickpeas, tahini, lemon juice and garlic.
+              </div>
+
+              <div class="menu-item">
+                <span class="item-name">Tzatziki
+                  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge dairy">D</span>
+                  </span>
+                </span>
+                <span class="item-price">£5.70</span>
+              </div>
+              <div class="item-desc">
+                Creamy yoghurt dip with cucumber, mint and a hint of garlic.
+              </div>
+
+              <div class="menu-item">
+                <span class="item-name">MIXED OLIVES
+                  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                  </span>
+                </span>
+                <span class="item-price">£4.45</span>
+              </div>
+              <div class="item-desc">Marinated mixed olives.</div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">TARAMA SALAD</span>
+                <span class="item-price">£6.00</span>
+              </div>
+              <div class="item-desc">
+                Marinated cod roe with onion and lemon.
+              </div>
+
+              <div class="menu-item">
+                <span class="item-name">FETA CHEESE
+                  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge dairy">D</span>
+                  </span>
+                </span>
+                <span class="item-price">£6.00</span>
+              </div>
+              <div class="item-desc">Turkish feta cheese.</div>
             </div>
           </div>
         </div>
-      </nav>
-
-      <div class="container-fluid py-5">
-        <div class="container">
-          <!-- Cold Appetizers Section -->
-          <div class="py-5">
-            <h2 style="text-align: center">Cold Appetizers</h2>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name"
-                    >HUMUS
-                    <span class="allergens">
-                      <span class="badge vegetarian">V</span>
-                    </span>
+        <!-- Hot Appetizers Section -->
+        <div class="py-5">
+          <h2 style="text-align: center">Hot Appetizers</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">CHEESY PASTRY ROLL
+                  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge gluten">G</span>
+                    <span class="badge dairy">D</span>
                   </span>
-                  <span class="item-price">£5.70</span>
-                </div>
-                <div class="item-desc">
-                  Crushed chickpeas, tahini, lemon juice and garlic.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name"
-                    >Tzatziki
-                    <span class="allergens">
-                      <span class="badge vegetarian">V</span>
-                      <span class="badge dairy">D</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£5.70</span>
-                </div>
-                <div class="item-desc">
-                  Creamy yoghurt dip with cucumber, mint and a hint of garlic.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name"
-                    >MIXED OLIVES
-                    <span class="allergens">
-                      <span class="badge vegetarian">V</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£4.45</span>
-                </div>
-                <div class="item-desc">Marinated mixed olives.</div>
+                </span>
+                <span class="item-price">£6.50</span>
+              </div>
+              <div class="item-desc">
+                Pastry filled with a Feta Cheese and parsley mix.
               </div>
 
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name">TARAMA SALAD</span>
-                  <span class="item-price">£6.00</span>
-                </div>
-                <div class="item-desc">
-                  Marinated cod roe with onion and lemon.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name"
-                    >FETA CHEESE
-                    <span class="allergens">
-                      <span class="badge vegetarian">V</span>
-                      <span class="badge dairy">D</span>
-                    </span>
+              <div class="menu-item">
+                <span class="item-name">HALLOUMI
+                  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge dairy">D</span>
                   </span>
-                  <span class="item-price">£6.00</span>
-                </div>
-                <div class="item-desc">Turkish feta cheese.</div>
+                </span>
+                <span class="item-price">£7.00</span>
+              </div>
+              <div class="item-desc">Grilled Halloumi Cheese.</div>
+
+              <div class="menu-item">
+                <span class="item-name">Deep fried squid </span>
+                <span class="item-price">£7.50</span>
+              </div>
+              <div class="item-desc">
+                Fried and seasoned crispy squid with tartar sauce.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">PAN FRIED PRAWNS</span>
+                <span class="item-price">£8.00</span>
+              </div>
+              <div class="item-desc">
+                King Prawns pan fried in Tomato Sauce with Peppers.
+              </div>
+
+              <div class="menu-item">
+
+                <span class="item-name">
+                  SPICY BEEF SAUSAGE (SUCUK)
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                  </span> </span>
+                <span class="item-price">£7.00</span>
+              </div>
+              <div class="item-desc">
+                Slices of grilled Spicy Beef Sausage.
+              </div>
+              <div class="menu-item">
+                <span class="item-name">FALAFEL
+                  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge gluten">G</span>
+                  </span>
+                </span>
+                <span class="item-price">£7.00</span>
+              </div>
+              <div class="item-desc">
+                Tahini, Sesame Seeds, Chickpeas, Parsley, Onion, Garlic,
+                Coriander,Mixed Pepper, Carrots,Celery and Flour. Served with
+                Hummus.
               </div>
             </div>
           </div>
-          <!-- Hot Appetizers Section -->
-          <div class="py-5">
-            <h2 style="text-align: center">Hot Appetizers</h2>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name"
-                    >CHEESY PASTRY ROLL
-                    <span class="allergens">
-                      <span class="badge vegetarian">V</span>
-                      <span class="badge gluten">G</span>
-                      <span class="badge dairy">D</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£6.50</span>
-                </div>
-                <div class="item-desc">
-                  Pastry filled with a Feta Cheese and parsley mix.
-                </div>
+        </div>
 
-                <div class="menu-item">
-                  <span class="item-name"
-                    >HALLOUMI
-                    <span class="allergens">
-                      <span class="badge vegetarian">V</span>
-                      <span class="badge dairy">D</span>
-                    </span>
+        <!-- Main courses Section -->
+        <div class="py-5">
+          <h2 style="text-align: center">Main courses</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">LAMB SHISH
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
                   </span>
-                  <span class="item-price">£7.00</span>
-                </div>
-                <div class="item-desc">Grilled Halloumi Cheese.</div>
-
-                <div class="menu-item">
-                  <span class="item-name">Deep fried squid </span>
-                  <span class="item-price">£7.50</span>
-                </div>
-                <div class="item-desc">
-                  Fried and seasoned crispy squid with tartar sauce.
-                </div>
+                </span>
+                <span class="item-price">£19.50</span>
+              </div>
+              <div class="item-desc">
+                Marinated cubes of lamb chargrilled on a skewer, served with
+                salad and rice.
               </div>
 
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name">PAN FRIED PRAWNS</span>
-                  <span class="item-price">£8.00</span>
-                </div>
-                <div class="item-desc">
-                  King Prawns pan fried in Tomato Sauce with Peppers.
-                </div>
+              <div class="menu-item">
+                <span class="item-name">LAMB SHISH WRAP
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                  </span> </span>
+                <span class="item-price">£16.50</span>
+              </div>
+              <div class="item-desc">
+                Marinated cubes of lamb chargrilled on a skewer in tortilla
+                wrap with salad and sauce.
+              </div>
 
-                <div class="menu-item">
-                  <span class="item-name">SPICY BEEF SAUSAGE (SUCUK) </span>
-                  <span class="item-price">£7.00</span>
-                </div>
-                <div class="item-desc">
-                  Slices of grilled Spicy Beef Sausage.
-                </div>
-                <div class="menu-item">
-                  <span class="item-name"
-                    >FALAFEL
-                    <span class="allergens">
-                      <span class="badge vegetarian">V</span>
-                      <span class="badge gluten">G</span>
-                    </span>
+              <div class="menu-item">
+                <span class="item-name">LAMB RIBS
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
                   </span>
-                  <span class="item-price">£7.00</span>
-                </div>
-                <div class="item-desc">
-                  Tahini, Sesame Seeds, Chickpeas, Parsley, Onion, Garlic,
-                  Coriander,Mixed Pepper, Carrots,Celery and Flour. Served with
-                  Hummus.
-                </div>
+                </span>
+                <span class="item-price">£18.50</span>
+              </div>
+              <div class="item-desc">
+                Dish of specially prepared lamb ribs, served with salad &
+                rice.
+              </div>
+
+              <div class="menu-item">
+                <span class="item-name">LAMB CHOP
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                  </span>
+                </span>
+                <span class="item-price">£24.90</span>
+              </div>
+              <div class="item-desc">
+                Chargrilled lamb cutlets with salad & rice.
+              </div>
+
+              <div class="menu-item">
+                <span class="item-name">LAMB SHISH WITH YOGHURT
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                    <span class="badge dairy">D</span>
+                  </span>
+                </span>
+                <span class="item-price">£21.50</span>
+              </div>
+              <div class="item-desc">
+                Grilled Lamb Cubes on a base of Croutons and Tomato Sauce and
+                topped with Yoghurt and melted Butter.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">CHICKEN SHISH
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                  </span>
+                </span>
+                <span class="item-price">£17.50</span>
+              </div>
+              <div class="item-desc">
+                Marinated cubes of Chicken Breast chargrilled on skewer,
+                served with rice and salad.
+              </div>
+
+              <div class="menu-item">
+                <span class="item-name">CHICKEN SHISH WRAP
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                  </span> </span>
+                <span class="item-price">£14.50</span>
+              </div>
+              <div class="item-desc">
+                Marinated cubes of Chicken Breast chargrilled on skewer in
+                tortilla wrap with salad and sauce.
+              </div>
+              <div class="menu-item">
+                <span class="item-name">CHICKEN WINGS
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                  </span>
+                </span>
+                <span class="item-price">£16.50</span>
+              </div>
+              <div class="item-desc">
+                Chargrilled Chicken Wings served with rice and salad.
+              </div>
+
+              <div class="menu-item">
+                <span class="item-name">CHICKEN SHISH WITH YOGHURT
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                    <span class="badge dairy">D</span>
+                  </span>
+                </span>
+                <span class="item-price">£18.50</span>
+              </div>
+              <div class="item-desc">
+                Grilled Chicken Cubes on a base of Croutons and Tomato Sauce
+                and topped with Yoghurt and melted Butter.
+              </div>
+
+              <div class="menu-item">
+                <span class="item-name">MIX SHISH
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                  </span>
+                </span>
+                <span class="item-price">£19.00</span>
+              </div>
+              <div class="item-desc">
+                Marinated cubes of chicken breast, tender cubes of lamb,
+                chargrilled on a skewer and served with salad and rice.
               </div>
             </div>
           </div>
-
-          <!-- Main courses Section -->
-          <div class="py-5">
-            <h2 style="text-align: center">Main courses</h2>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name"
-                    >LAMB SHISH
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£19.50</span>
-                </div>
-                <div class="item-desc">
-                  Marinated cubes of lamb chargrilled on a skewer, served with
-                  salad and rice.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name">LAMB SHISH WRAP </span>
-                  <span class="item-price">£16.50</span>
-                </div>
-                <div class="item-desc">
-                  Marinated cubes of lamb chargrilled on a skewer in tortilla
-                  wrap with salad and sauce.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name"
-                    >LAMB RIBS
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£18.50</span>
-                </div>
-                <div class="item-desc">
-                  Dish of specially prepared lamb ribs, served with salad &
-                  rice.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name"
-                    >LAMB CHOP
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£24.90</span>
-                </div>
-                <div class="item-desc">
-                  Chargrilled lamb cutlets with salad & rice.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name"
-                    >LAMB SHISH WITH YOGHURT
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                      <span class="badge dairy">D</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£21.50</span>
-                </div>
-                <div class="item-desc">
-                  Grilled Lamb Cubes on a base of Croutons and Tomato Sauce and
-                  topped with Yoghurt and melted Butter.
-                </div>
+        </div>
+        <!-- Burgers Section -->
+        <div class="py-5">
+          <h2 style="text-align: center">Burgers</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">Grill Chicken Burger</span>
+                <span class="item-price">£13.95</span>
+              </div>
+              <div class="item-desc">
+                Fresh chicken grilled with cheese, lettuce, tomatoes and sauce.
               </div>
 
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name"
-                    >CHICKEN SHISH
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£17.50</span>
-                </div>
-                <div class="item-desc">
-                  Marinated cubes of Chicken Breast chargrilled on skewer,
-                  served with rice and salad.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name">CHICKEN SHISH WRAP </span>
-                  <span class="item-price">£14.50</span>
-                </div>
-                <div class="item-desc">
-                  Marinated cubes of Chicken Breast chargrilled on skewer in
-                  tortilla wrap with salad and sauce.
-                </div>
-                <div class="menu-item">
-                  <span class="item-name"
-                    >CHICKEN WINGS
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£16.50</span>
-                </div>
-                <div class="item-desc">
-                  Chargrilled Chicken Wings served with rice and salad.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name"
-                    >CHICKEN SHISH WITH YOGHURT
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                      <span class="badge dairy">D</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£18.50</span>
-                </div>
-                <div class="item-desc">
-                  Grilled Chicken Cubes on a base of Croutons and Tomato Sauce
-                  and topped with Yoghurt and melted Butter.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name"
-                    >MIX SHISH
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£19.00</span>
-                </div>
-                <div class="item-desc">
-                  Marinated cubes of chicken breast, tender cubes of lamb,
-                  chargrilled on a skewer and served with salad and rice.
-                </div>
+              <div class="menu-item">
+                <span class="item-name">Grill Beef Burger</span>
+                <span class="item-price">£13.95</span>
+              </div>
+              <div class="item-desc">
+                Fresh ground beef grilled with cheese, pickles and sauce.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">Vegan Burger</span>
+                <span class="item-price">£13.95</span>
+              </div>
+              <div class="item-desc">
+                Juicy plant-based patty with vegan mayo, lettuce, tomato and
+                vegan cheese.
               </div>
             </div>
           </div>
-          <!-- Burgers Section -->
-          <div class="py-5">
-            <h2 style="text-align: center">Burgers</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name">Crusty Chicken Burger</span>
-                  <span class="item-price">£13.95</span>
-                </div>
-                <div class="item-desc">
-                  Fried chicken fillet with cheese, sweet chilli sauce, mustard
-                  and arugula.
-                </div>
-
-                <div class="menu-item">
-                  <span class="item-name">Crusty Beef Burger</span>
-                  <span class="item-price">£13.95</span>
-                </div>
-                <div class="item-desc">
-                  Fresh ground beef grilled with cheese, pickles and sauce.
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name">Vegan Burger</span>
-                  <span class="item-price">£13.95</span>
-                </div>
-                <div class="item-desc">
-                  Juicy plant-based patty with vegan mayo, lettuce, tomato and
-                  vegan cheese.
-                </div>
-              </div>
-            </div>
-
-            <p style="text-align: center">
+          <div style="text-align: center">
+            <span style="text-align: center">
               <i>*Our burgers are served with chips.</i>
-            </p>
+            </span>
           </div>
-          <!-- SALAD & SIDE Section -->
-          <div class="py-5">
-            <h2 style="text-align: center">Salad & Side</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name">COBAN SALATA</span>
-                  <span class="item-price">£6.50</span>
-                </div>
-                <div class="item-desc">
-                  Tomato, cucumber, peppers, parsley, and red onion mixed with
-                  olive oil & lemon juice.
-                </div>
 
-                <div class="menu-item">
-                  <span class="item-name">FETA SALATA</span>
-                  <span class="item-price">£7.30</span>
-                </div>
-                <div class="item-desc">
-                  Tomato, cucumber, peppers,parsley and olives topped with feta
-                  cheese, drizzled with salad dressing.
-                </div>
+        </div>
+        <!-- SALAD & SIDE Section -->
+        <div class="py-5">
+          <h2 style="text-align: center">Salad & Side</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">COBAN SALATA  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                  </span></span>
+                <span class="item-price">£6.50</span>
               </div>
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name">RICE</span>
-                  <span class="item-price">£3.20</span>
-                </div>
-                <div class="menu-item">
-                  <span class="item-name">CHIPS</span>
-                  <span class="item-price">£3.50</span>
-                </div>
-                <div class="menu-item">
-                  <span class="item-name">YOGHURT</span>
-                  <span class="item-price">£3.20</span>
-                </div>
-                <div class="menu-item">
-                  <span class="item-name">EXTRA BREAD</span>
-                  <span class="item-price">£1.80</span>
-                </div>
+              <div class="item-desc">
+                Tomato, cucumber, peppers, parsley, and red onion mixed with
+                olive oil & lemon juice.
+              </div>
+
+              <div class="menu-item">
+                <span class="item-name">FETA SALATA
+                   <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge dairy">D</span>
+                  </span>
+                </span>
+                <span class="item-price">£7.30</span>
+              </div>
+              <div class="item-desc">
+                Tomato, cucumber, peppers,parsley and olives topped with feta
+                cheese, drizzled with salad dressing.
               </div>
             </div>
-          </div>
-          <!-- Dessert Section -->
-          <div class="py-5">
-            <h2 style="text-align: center">Desserts</h2>
-
-            <div class="row">
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name"
-                    >Baklava
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                      <span class="badge nuts">N</span>
-                    </span>
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">RICE
+                   <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge gluten">G</span>
                   </span>
-                  <span class="item-price">£6.50</span>
-                </div>
-                <div class="item-desc">
-                  Homemade Layered Pasty with Pistachio and Topped with Special
-                  Turkish Syrup.
-                </div>
-                <div class="menu-item">
-                  <span class="item-name"
-                    >Ice Cream
-                    <span class="allergens">
-                      <span class="badge dairy">D</span>
-                    </span>
-                  </span>
-                  <span class="item-price">£5.00</span>
-                </div>
-                <div class="item-desc">
-                  3 Scoops: Vanilla, Chocolate, Strawberry.
-                </div>
+                </span>
+                <span class="item-price">£3.20</span>
               </div>
-
-              <div class="col-md-6">
-                <div class="menu-item">
-                  <span class="item-name"
-                    >Tiramisu
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                      <span class="badge dairy">D</span>
-                    </span>
+              <div class="menu-item">
+                <span class="item-name">CHIPS
+                   <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                   
                   </span>
-                  <span class="item-price">£6.50</span>
-                </div>
-                <div class="menu-item">
-                  <span class="item-name"
-                    >Profiteroles
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                      <span class="badge dairy">D</span>
-                    </span>
+                </span>
+                <span class="item-price">£3.50</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">YOGHURT
+                   <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge dairy">D</span>
                   </span>
-                  <span class="item-price">£6.00</span>
-                </div>
-                <div class="menu-item">
-                  <span class="item-name"
-                    >Cheese Cake
-                    <span class="allergens">
-                      <span class="badge gluten">G</span>
-                      <span class="badge dairy">D</span>
-                    </span>
+                </span>
+                <span class="item-price">£3.20</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">BREAD
+                   <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge dairy">D</span>
                   </span>
-                  <span class="item-price">£6.00</span>
-                </div>
-                <div class="menu-item">
-                  <span class="item-name">Strawberry Cheese Cake</span>
-                  <span class="item-price">£6.00</span>
-                </div>
+                </span>
+                <span class="item-price">£1.80</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <!-- Footer Section -->
-  <section class="section">
-    <footer class="legend-footer py-4">
-      <div class="legend">
-        <span class="legend-item vegetarian">V: VEGETARIAN</span>
-        <span class="legend-item nuts">N: NUTS</span>
-        <span class="legend-item gluten">G: CONTAINS GLUTEN</span>
-        <span class="legend-item dairy">D: CONTAINS DAIRY</span>
-      </div>
-      <small class="text-black my-2">A discretionary 10% service charge will be added to your bill.</small>
-    </footer>
+        <!-- Dessert Section -->
+        <div class="py-5">
+          <h2 style="text-align: center">Desserts</h2>
 
-  </section>
-      <footer class="bg-black">
-        <div class="container py-5">
-          <div class="d-flex flex-column align-items-center text-white">
-            <div class="py-2">
-              <img src="assets/lotus-all.svg" style="height: 90px" />
-            </div>
-            <div class="py-3">
-              <div class="d-flex gap-3 align-items-center py-2">
-                <i class="fa-solid fa-xl fa-location-dot"></i>
-                <p class="m-0">18 Sir Isaacs Walk Colchester CO1 1JJ</p>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">Baklava
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                    <span class="badge nuts">N</span>
+                  </span>
+                </span>
+                <span class="item-price">£6.50</span>
               </div>
-
-              <div class="d-flex gap-3 align-items-center py-2">
-                <i class="fa-solid fa-xl fa-phone"></i>
-                <p class="m-0">+444 8494-034043</p>
+              <div class="item-desc">
+                Homemade Layered Pasty with Pistachio and Topped with Special
+                Turkish Syrup.
               </div>
-              <div class="d-flex gap-3 align-items-center py-2">
-                <i class="fa-solid fa-xl fa-envelope"></i>
-                <p class="m-0">lotusrestaurant@gmail.com</p>
+              <div class="menu-item">
+                <span class="item-name">Ice Cream
+                  <span class="allergens">
+                    <span class="badge dairy">D</span>
+                  </span>
+                </span>
+                <span class="item-price">£5.00</span>
+              </div>
+              <div class="item-desc">
+                3 Scoops: Vanilla, Chocolate, Strawberry.
               </div>
             </div>
 
-            <p class="py-3">Lotus Restaurant 2026. All Rights Reserved.</p>
+            <div class="col-md-6">
+              
+              <div class="menu-item">
+                <span class="item-name">Profiteroles
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                    <span class="badge dairy">D</span>
+                  </span>
+                </span>
+                <span class="item-price">£6.00</span>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Strawberry Cheese Cake
+                  <span class="allergens">
+                    <span class="badge gluten">G</span>
+                    <span class="badge dairy">D</span>
+                  </span>
+                </span>
+                <span class="item-price">£6.00</span>
+              </div>
+
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
+    <!-- Footer Section -->
+    <section class="section">
+      <footer class="legend-footer py-4">
+        <div class="legend">
+          <span class="legend-item vegetarian">V: VEGETARIAN</span>
+          <span class="legend-item nuts">N: NUTS</span>
+          <span class="legend-item gluten">G: CONTAINS GLUTEN</span>
+          <span class="legend-item dairy">D: CONTAINS DAIRY</span>
+        </div>
+        <small class="text-black my-2">A discretionary 10% service charge will be added to your bill.</small>
+      </footer>
+
+    </section>
+    <footer class="bg-black">
+      <div class="container py-5">
+        <div class="d-flex flex-column align-items-center text-white">
+          <div class="py-2">
+            <img src="assets/lotus-all.svg" style="height: 90px" />
+          </div>
+          <div class="py-3">
+            <div class="d-flex gap-3 align-items-center py-2">
+              <i class="fa-solid fa-xl fa-location-dot"></i>
+              <p class="m-0">18 Sir Isaacs Walk Colchester CO1 1JJ</p>
+            </div>
+
+            <div class="d-flex gap-3 align-items-center py-2">
+              <i class="fa-solid fa-xl fa-phone"></i>
+              <p class="m-0">+444 8494-034043</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center py-2">
+              <i class="fa-solid fa-xl fa-envelope"></i>
+              <p class="m-0">lotusrestaurant@gmail.com</p>
+            </div>
+          </div>
+
+          <p class="py-3">Lotus Restaurant 2026. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
