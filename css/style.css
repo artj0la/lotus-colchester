@@ -10,14 +10,18 @@
 .font-format{
   font-family: 'Beautiful', sans-serif !important;
   color: #deb425;
-  font-size: 100px;
-  letter-spacing: 4px;
+  font-size: 100px !important;
+  letter-spacing: 3px;
+}
+.font-family{
+  font-family: 'Beautiful', sans-serif !important;
+  letter-spacing: 3px;
+  font-size: 80px !important;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Crimson Pro", serif;
-  font-weight: 900;
 }
 .logo-container {
   position: fixed;
@@ -32,8 +36,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-custom{
-  border: 1px solid #deb425 !important;
+  border-bottom: 1px solid #deb425 !important;
+  border-radius: 0;
+  
 }
+.btn-custom:hover{
+  border-bottom: 1px solid white !important;
+  color: white !important;
+}
+ .btn-custom:hover a{
+ 
+  color: white !important;
+}
+
+.btn-custom a {
+color: #deb425 !important;
+}
+
+
 .logo-container img {
   width: 180px;
   max-width: 60vw;
@@ -95,7 +115,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: white !important;
+  color: #deb425 !important;
 }
 
 .menu-link {
@@ -103,7 +123,7 @@ nav {
 }
 
 .active-menu {
-   color: #deb425 !important;
+   border-bottom: 2px solid #deb425 !important;
 }
 
 /*menu*/
@@ -302,7 +322,7 @@ body.loading {
 
 .hero {
   height: 80vh;
-  background: url("../assets/rest.PNG") center/cover no-repeat;
+  background: url("../assets/hero.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -401,9 +421,6 @@ body.loading {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
-  text-align: center;
   color: white;
 }
 
