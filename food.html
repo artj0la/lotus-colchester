@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body style="padding-bottom: 60px;">
 
   <!-- MENU WRAPPER -->
   <div class="container-fluid p-0">
@@ -36,7 +36,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 bg-black" >
       <div class="container">
         <!-- Cold Appetizers Section -->
         <div class="py-5">
@@ -247,6 +247,18 @@
                 Grilled Lamb Cubes on a base of Croutons and Tomato Sauce and
                 topped with Yoghurt and melted Butter.
               </div>
+              <div class="menu-item">
+                <span class="item-name">MIX Vegetable skewers
+                  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                  </span>
+                </span>
+                <span class="item-price">£15.50</span>
+              </div>
+              <div class="item-desc">
+                An Aubergine, Courgette, Onion, Mushroom and Mixed Pepper Skewer,seasoned with Cumin and topped with a
+                Tomato Sauce. Served with Rice and Salad.
+              </div>
             </div>
 
             <div class="col-md-6">
@@ -312,6 +324,18 @@
                 Marinated cubes of chicken breast, tender cubes of lamb,
                 chargrilled on a skewer and served with salad and rice.
               </div>
+              <div class="menu-item">
+                <span class="item-name">VEGI GRILLED HALLOUMI
+                  <span class="allergens">
+                    <span class="badge vegetarian">V</span>
+                    <span class="badge dairy">D</span>
+                  </span>
+                </span>
+                <span class="item-price">£16.50</span>
+              </div>
+              <div class="item-desc">
+                Grilled Halloumi and mixed vegetables and served with salad
+              </div>
             </div>
           </div>
         </div>
@@ -348,8 +372,43 @@
             </div>
           </div>
           <div style="text-align: center">
-            <span style="text-align: center">
+            <span style="text-align: center"  class="text-white">
               <i>*Our burgers are served with chips.</i>
+            </span>
+          </div>
+
+        </div>
+
+         <!-- Kids Section -->
+        <div class="py-5">
+          <h2 style="text-align: center">Kids Dishes</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">Chicken Nuggets</span>
+                <span class="item-price">£7.50</span>
+              </div>
+             
+
+              <div class="menu-item">
+                <span class="item-name">Chicken Shish</span>
+                <span class="item-price">£10.50</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-item">
+                <span class="item-name">Lamb Shish</span>
+                <span class="item-price">£10.50</span>
+              </div>
+             <div class="menu-item">
+                <span class="item-name">Mini Chicken Burger</span>
+                <span class="item-price">£7.50</span>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center" class="pt-3">
+            <span style="text-align: center" class="text-white">
+              <i>*All dishes served with rice or chips.</i>
             </span>
           </div>
 
@@ -360,7 +419,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="menu-item">
-                <span class="item-name">COBAN SALATA  <span class="allergens">
+                <span class="item-name">COBAN SALATA <span class="allergens">
                     <span class="badge vegetarian">V</span>
                   </span></span>
                 <span class="item-price">£6.50</span>
@@ -372,7 +431,7 @@
 
               <div class="menu-item">
                 <span class="item-name">FETA SALATA
-                   <span class="allergens">
+                  <span class="allergens">
                     <span class="badge vegetarian">V</span>
                     <span class="badge dairy">D</span>
                   </span>
@@ -387,7 +446,7 @@
             <div class="col-md-6">
               <div class="menu-item">
                 <span class="item-name">RICE
-                   <span class="allergens">
+                  <span class="allergens">
                     <span class="badge vegetarian">V</span>
                     <span class="badge gluten">G</span>
                   </span>
@@ -396,16 +455,16 @@
               </div>
               <div class="menu-item">
                 <span class="item-name">CHIPS
-                   <span class="allergens">
+                  <span class="allergens">
                     <span class="badge vegetarian">V</span>
-                   
+
                   </span>
                 </span>
                 <span class="item-price">£3.50</span>
               </div>
               <div class="menu-item">
                 <span class="item-name">YOGHURT
-                   <span class="allergens">
+                  <span class="allergens">
                     <span class="badge vegetarian">V</span>
                     <span class="badge dairy">D</span>
                   </span>
@@ -414,7 +473,7 @@
               </div>
               <div class="menu-item">
                 <span class="item-name">BREAD
-                   <span class="allergens">
+                  <span class="allergens">
                     <span class="badge vegetarian">V</span>
                     <span class="badge dairy">D</span>
                   </span>
@@ -457,7 +516,7 @@
             </div>
 
             <div class="col-md-6">
-              
+
               <div class="menu-item">
                 <span class="item-name">Profiteroles
                   <span class="allergens">
@@ -495,32 +554,33 @@
       </footer>
 
     </section>
-    <footer class="bg-black">
-      <div class="container py-5">
-        <div class="d-flex flex-column align-items-center text-white">
-          <div class="py-2">
-            <img src="assets/lotus-all.svg" style="height: 90px" />
-          </div>
-          <div class="py-3">
-            <div class="d-flex gap-3 align-items-center py-2">
-              <i class="fa-solid fa-xl fa-location-dot"></i>
-              <p class="m-0">18 Sir Isaacs Walk Colchester CO1 1JJ</p>
+  
+      <footer class="bg-black">
+        <div class="container py-5">
+          <div class="d-flex flex-column align-items-center text-white">
+            <div class="py-2">
+              <img src="assets/lotus-all.svg" style="height: 90px" />
+            </div>
+            <div class="py-3">
+              <div class="d-flex gap-3 align-items-center py-2">
+                <i class="fa-solid fa-xl fa-location-dot"></i>
+                <p class="m-0">18 Sir Isaacs Walk Colchester CO1 1JJ</p>
+              </div>
+
+              <div class="d-flex gap-3 align-items-center py-2">
+                <i class="fa-solid fa-xl fa-phone"></i>
+                <p class="m-0">+444 8494-034043</p>
+              </div>
+              <div class="d-flex gap-3 align-items-center py-2">
+                <i class="fa-solid fa-xl fa-envelope"></i>
+                <p class="m-0">lotusrestaurant@gmail.com</p>
+              </div>
             </div>
 
-            <div class="d-flex gap-3 align-items-center py-2">
-              <i class="fa-solid fa-xl fa-phone"></i>
-              <p class="m-0">+444 8494-034043</p>
-            </div>
-            <div class="d-flex gap-3 align-items-center py-2">
-              <i class="fa-solid fa-xl fa-envelope"></i>
-              <p class="m-0">lotusrestaurant@gmail.com</p>
-            </div>
+            <p class="py-3">Lotus Restaurant 2026. All Rights Reserved.</p>
           </div>
-
-          <p class="py-3">Lotus Restaurant 2026. All Rights Reserved.</p>
         </div>
-      </div>
-    </footer>
+      </footer>
   </div>
 
 
