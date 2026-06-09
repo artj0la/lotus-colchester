@@ -1,28 +1,35 @@
 /* LOADER */
 
 @font-face {
-    font-family: 'Beautiful';
-    src: url('../font/BDScript-Regular.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Beautiful';
+  src: url('../font/BDScript-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.font-format{
+.font-format {
   font-family: 'Beautiful', sans-serif !important;
   color: #deb425;
   font-size: 100px !important;
   letter-spacing: 3px;
 }
-.font-family{
+
+.font-family {
   font-family: 'Beautiful', sans-serif !important;
   letter-spacing: 3px;
   font-size: 80px !important;
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   /* font-family: "Crimson Pro", serif; */
 }
+
 .logo-container {
   position: fixed;
   inset: 0;
@@ -35,22 +42,24 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity 0.8s ease;
 }
 
-.btn-custom{
+.btn-custom {
   border-bottom: 1px solid #deb425 !important;
   border-radius: 0;
-  
+
 }
-.btn-custom:hover{
+
+.btn-custom:hover {
   border-bottom: 1px solid white !important;
   color: white !important;
 }
- .btn-custom:hover a{
- 
+
+.btn-custom:hover a {
+
   color: white !important;
 }
 
 .btn-custom a {
-color: #deb425 !important;
+  color: #deb425 !important;
 }
 
 
@@ -73,6 +82,7 @@ color: #deb425 !important;
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -81,15 +91,20 @@ color: #deb425 !important;
 body.loading {
   overflow: hidden;
 }
+body{
+  background-color: black;
+}
 
-h1{
+h1 {
   font-size: 80px !important;
   font-weight: 900 !important;
 }
-p{
+
+p {
   font-size: 20px !important;
   font-weight: 400 !important;
 }
+
 /* MENU HIDE/SHOW */
 .restaurant-menu {
   opacity: 0;
@@ -123,7 +138,7 @@ nav {
 }
 
 .active-menu {
-   border-bottom: 2px solid #deb425 !important;
+  border-bottom: 2px solid #deb425 !important;
 }
 
 /*menu*/
@@ -147,7 +162,7 @@ nav {
 
 
 .item-price {
-  color:white;
+  color: white;
   font-weight: 600;
   font-size: 20px;
 }
@@ -226,9 +241,7 @@ nav {
   }
 }
 
-body.loading {
-  overflow: hidden;
-}
+
 
 .restaurant-menu.visible {
   opacity: 1;
@@ -240,11 +253,11 @@ body.loading {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #f9f9f9;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #929191;
+   border-bottom: 1px solid #929191;
   font-size: 0.95rem;
   text-align: center;
-  position: fixed;
+  
   bottom: 0;
   align-items: center;
   flex-direction: column;
@@ -326,7 +339,7 @@ body.loading {
   position: relative;
   display: flex;
   align-items: center;
-  
+
   color: white;
   font-size: 80px !important;
   font-weight: 900;
@@ -341,6 +354,7 @@ body.loading {
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
 }
+
 .hero .overlay {
   position: relative;
   z-index: 2;
@@ -361,6 +375,7 @@ body.loading {
   overflow: hidden;
   transition: all 0.6s ease;
   cursor: pointer;
+  padding: 40px;
 }
 
 .panel::before {
@@ -379,15 +394,15 @@ body.loading {
 .visit {
   background-color: #1C1A20 !important;
 }
+
 .reservation {
   background-color: #151318 !important;
 }
+
 .visit::before {
   background:
-    linear-gradient(
-      rgba(0,0,0,.75),
-      rgba(0,0,0,.75)
-    ),
+    linear-gradient(rgba(0, 0, 0, .75),
+      rgba(0, 0, 0, .75)),
     url("../assets/rest.PNG");
 
   background-size: cover;
@@ -396,10 +411,8 @@ body.loading {
 
 .reservation::before {
   background:
-    linear-gradient(
-      rgba(0,0,0,.75),
-      rgba(0,0,0,.75)
-    ),
+    linear-gradient(rgba(0, 0, 0, .75),
+      rgba(0, 0, 0, .75)),
     url("../assets/rest.PNG");
 
   background-size: cover;
@@ -410,7 +423,7 @@ body.loading {
   content: "";
   position: absolute;
   inset: 0;
-  
+
   z-index: 2;
 }
 
@@ -447,7 +460,7 @@ body.loading {
 }
 
 .panel h2 {
-  
+
   font-size: 44px;
   color: white !important;
   font-weight: 900;
@@ -515,7 +528,33 @@ body.loading {
   width: 550px;
 }
 
-h2{
-   color: #deb425;
-   text-transform: uppercase;
+h2 {
+  color: #deb425;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 576px) {
+
+  .menu-link {
+    font-size: 20px !important;
+  }
+  .menu-link img{
+    height: 50px !important;
+  }
+  .hero{
+    font-size: 60px !important;
+  }
+  .font-family{
+    font-size: 60px !important;
+  }
+  .img-front{
+    width: 400px !important;
+  }
+   .image-stack{
+    height: 400px !important;
+  }
+  .split-section{
+    display: block !important;
+  }
 }
