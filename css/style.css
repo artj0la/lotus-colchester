@@ -439,7 +439,7 @@ nav {
 }
 
 .reservation {
-  background-color: #151318 !important;
+  background-color: #100f13 !important;
 }
 
 .visit::before {
@@ -605,6 +605,9 @@ h2 {
   .split-section{
     display: block !important;
   }
+  .font-family-gulfs{
+    font-size: 100px !important;
+  }
 }
 
 
@@ -618,6 +621,8 @@ h2 {
   padding: 0px 30px;
   border-radius: 0;
   transition: 0.3s;
+  line-height: normal;
+
 
 }
 
