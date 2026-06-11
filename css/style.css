@@ -281,7 +281,12 @@ nav {
   pointer-events: auto;
 }
 
-
+.legend{
+   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
 .legend-footer {
   display: flex;
   justify-content: center;
@@ -615,6 +620,12 @@ h2 {
   }
   p {
     font-size: 18px !important }
+    a{
+      font-size: 14px !important;
+    }
+    .item-name{
+      font-size: 20px !important;
+    }
 }
 
 
