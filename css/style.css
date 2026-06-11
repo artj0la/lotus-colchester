@@ -594,7 +594,8 @@ h2 {
     font-size: 60px !important;
   }
   .font-family{
-    font-size: 60px !important;
+    font-size: 70px !important;
+    line-height: 45px;
   }
   .img-front{
     width: 400px !important;
@@ -608,6 +609,11 @@ h2 {
   .font-family-gulfs{
     font-size: 100px !important;
   }
+  .w-75{
+    width: 100% !important;
+  }
+  p {
+    font-size: 18px !important }
 }
 
 
@@ -621,7 +627,7 @@ h2 {
   padding: 0px 30px;
   border-radius: 0;
   transition: 0.3s;
-  line-height: normal;
+  line-height: 90px;;
 
 
 }
