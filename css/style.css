@@ -2,9 +2,22 @@
 
 @font-face {
   font-family: 'Beautiful';
-  src: url('../font/BDScript-Regular.otf') format('truetype');
+  src: url('../fonts/BDScript-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gulfs';
+  src: url('../fonts/gulfs-display-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-family-gulfs{
+    font-family: 'Gulfs', sans-serif !important;
+    color: white;
+    font-size: 150px !important;
 }
 
 .font-format {
@@ -18,6 +31,11 @@
   font-family: 'Beautiful', sans-serif !important;
   letter-spacing: 3px;
   font-size: 80px !important;
+}
+.f-90{
+   font-size:120px !important;
+   font-weight: 500;
+   letter-spacing: 1px;
 }
 
 
@@ -59,8 +77,9 @@ h6 {
 }
 
 .btn-custom a {
+  font-size: 16px;
   color: #deb425 !important;
-}
+} 
 
 
 .logo-container img {
@@ -123,10 +142,21 @@ nav {
   z-index: 1050;
 }
 
-.nav-link {
+/* .nav-link {
   color: white;
   font-weight: bold;
   font-size: 22px;
+} */
+
+.custom-border{
+  border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #FFFFFF1F;
+}
+
+.nav-link {
+  color: white;
+  
 }
 
 .nav-link:hover {
@@ -135,6 +165,8 @@ nav {
 
 .menu-link {
   cursor: pointer;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .active-menu {
@@ -328,14 +360,25 @@ nav {
   /* blue */
 }
 
+.image-box {
+  width: 100%;
+  height: 500px; /* same height for all */
+  overflow: hidden;
+}
 
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops while keeping proportions */
+  display: block;
+}
 
 /* home */
 
 
 .hero {
   height: 80vh;
-  background: url("../assets/hero.jpg") center/cover no-repeat;
+  background: url("../assets/rest.PNG") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -403,10 +446,15 @@ nav {
   background:
     linear-gradient(rgba(0, 0, 0, .75),
       rgba(0, 0, 0, .75)),
-    url("../assets/rest.PNG");
+    url("../assets/rest-garden.PNG");
 
   background-size: cover;
   background-position: center;
+}
+
+.hero .overlay{
+  align-items: flex-start !important;
+  text-align: left;
 }
 
 .reservation::before {
@@ -557,4 +605,31 @@ h2 {
   .split-section{
     display: block !important;
   }
+}
+
+
+
+/*menu tabs*/
+
+.nav-pills .nav-link {
+  background: transparent;
+  color: #fff;
+  margin: 0 8px;
+  padding: 0px 30px;
+  border-radius: 0;
+  transition: 0.3s;
+
+}
+
+.nav-pills .nav-link.active {
+  background: none;
+  color: #deb425;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  color: #fff;
+  font-size: 18px;
 }

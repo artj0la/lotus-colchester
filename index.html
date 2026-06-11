@@ -55,18 +55,37 @@
   <!-- MENU WRAPPER -->
   <div class="restaurant-menu" id="menu">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-dark bg-black py-3 sticky-top">
-      <div class="container">
+    <nav class="navbar navbar-dark bg-black py-0 px-5">
+
+      <div class="d-flex align-items-center justify-content-between w-100 p-3 custom-border">
+        <a target="_blank" class="nav-link d-flex align-items-center text-white gap-1"
+          href="https://www.google.com/maps/place/18+Sir+Isaac's+Walk,+Colchester+CO1+1JL,+Mbret%C3%ABria+e+Bashkuar/data=!4m2!3m1!1s0x47d904f7725bf6bb:0x2bd5a5f53a01bd5?sa=X&ved=1t:242&ictx=111">
+          <i class="fa-solid fa-location-dot"></i>
+          18 Sir Isaacs Walk Colchester CO1 1JJ.</a>
+        <div class="d-flex gap-4">
+          <a target="_blank" class="nav-link d-flex align-items-center text-white gap-1" href="tel:01206 693637">
+            <i class="fa-solid fa-phone"></i>
+            01206 693637</a>
+          <a target="_blank" class="nav-link d-flex align-items-center text-white gap-1"
+            href="mailto:lotusrestaurantltd@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+            lotusrestaurantltd@gmail.com</a>
+        </div>
+
+
+      </div>
+
+
+      <div class="container py-3">
         <div class="d-flex align-items-center justify-content-between w-100">
           <a class="nav-link menu-link" data-section="home" href="index.html">
             <img src="assets/lotus-all.svg" style="height: 70px" />
           </a>
           <div class="d-flex gap-4">
             <a class="nav-link menu-link active-menu" data-section="home" href="index.html">Home</a>
-            <a class="nav-link menu-link" data-section="food" href="food.html">Food</a>
-            <a class="nav-link menu-link" data-section="drinks" href="drinks.html">Drinks</a>
-            <a class="nav-link menu-link" data-section="shisha" href="shisha.html">Shisha</a>
+            <a class="nav-link menu-link" data-section="food" href="menu.html">Menu</a>
           </div>
+
         </div>
       </div>
     </nav>
@@ -76,30 +95,30 @@
       <header class="hero">
         <div class="overlay container">
 
-          <div>Check out <br>
-            Delicious Menu List</div>
-
-
-
-
-          <div class="d-flex gap-5">
-            <button type="button" class="btn btn-custom">
-              <a class="nav-link menu-link" target="_blank" href="assets/menu.pdf">View Our
-                Menu</a></button>
-
+          <div>
+            <div class="font-family f-90">Welcome to</div>
+            <img src="assets/lotus-word.svg" style="height: 80px" /> <br>
+            <!-- <h1>Restaurant & Lounge</h1> -->
           </div>
+          <p class="w-75 pt-5">Experience the perfect balance of Mediterranean cuisine, signature drinks, and premium
+            shisha in a space designed for relaxation and celebration. Whether you're joining us for dinner, cocktails,
+            or an evening with friends, every detail is crafted to elevate your experience.</p>
+          <button type="button" class="btn btn-custom pt-4">
+            <a class="nav-link menu-link" target="_blank" href="assets/menu.pdf">View Our
+              Menu</a></button>
 
         </div>
       </header>
 
       <!-- ABOUT -->
       <section class="container py-5 text-center text-white">
-        <p class="font-format">About Us</p>
+        <p class="font-format m-0">About Us</p>
         <div class="d-flex justify-content-center py-3">
           <p class="w-75">
-            We offer a premium dining experience combining Mediterranean
-            cuisine, signature cocktails, and a luxury shisha lounge in the
-            heart of Colchester.
+            At Lotus, every detail is thoughtfully curated, from the ingredients in our kitchen to the ambience of our
+            lounge. We believe great hospitality goes beyond food and drink. It's about creating a place where people
+            connect, celebrate, and unwind. Nestled in the heart of Colchester, Lotus offers a seamless blend of
+            exceptional cuisine, elegant surroundings, and a truly distinctive shisha experience.
           </p>
         </div>
 
@@ -119,9 +138,34 @@
             <span>Premium flavors & lounge experience</span>
           </div>
         </div>
-        <div class="py-5">
+        <div class="pt-5">
           <h3 class="text-uppercase">Lotus is for everyone who<br> collects beautiful moments</h3>
           <p class="font-family">For the best memories</p>
+        </div>
+      </section>
+
+      <!-- Hookah -->
+
+      <section class="container text-center text-white pb-5">
+        <div class="row text-center">
+          <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+            <div class="image-box">
+              <img class="w-100 py-3" src="assets/hookah.jpeg" />
+            </div>
+          </div>
+          <div class="col-md-4 d-flex flex-column justify-content-center align-items-center px-4">
+            <span class="subtitle">PREMIUM SHISHA EXPERIENCE</span>
+            <h4 class="text-uppercase">Indulge in the Finest Flavours</h4>
+            <p class="py-3">Discover expertly crafted shisha in an atmosphere designed for comfort and style. Featuring
+              a carefully
+              curated selection of traditional and signature flavours, every session is prepared with exceptional
+              attention to detail for a smooth and satisfying experience.</p>
+          </div>
+          <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+            <div class="image-box">
+              <img class="py-3 w-100" src="assets/lotus-place.jpeg" />
+            </div>
+          </div>
         </div>
       </section>
 
