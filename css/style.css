@@ -285,7 +285,7 @@ nav {
    display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px 24px;
+  gap: 10px ;
 }
 .legend-footer {
   display: flex;
@@ -624,7 +624,7 @@ h2 {
       font-size: 14px !important;
     }
     .item-name{
-      font-size: 20px !important;
+      font-size: 18px !important;
     }
 }
 
